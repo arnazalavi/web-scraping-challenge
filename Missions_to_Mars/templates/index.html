@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mission to Mars</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
 </head>
 
 <body>
@@ -20,27 +21,27 @@
     <!-- Phone Listings -->
     <div class="row">
       <div class="col-md-12">
-        <h2><u> Latest Mars News</u></h2>
+        <h2><b> Latest Mars News</b></h2>
       </div>
     </div>
     
     <div class="row">
       <div class="col-md-12">
-        <h4> Mongo</h4>
+        
         <h4>{{mars_list.latest_news_title}}</h4>
         <p>{{mars_list.news_paragraph}}</p>
       </div>
     </div>
     
     <div class="row">
-      <div class="col-md-12">
-        <h2>Featured Mars Image </h2>
-        <img src="{{mars_list.featured_Image}}" alt="Featured Mars Image">
+      <div class="col-md-8">
+        <h2> <b> Featured Mars Image </b></h2>
+        <img    src="{{mars_list.featured_Image}}" alt="Featured Mars Image">
         
       </div>
     <div class="card">
-      <div class="col-md-12">
-        <h2> Mars Fact </h2>
+      <div class="col-md-4">
+        <h2> <b> Mars Fact </b> </h2>
         {{mars_list.mars_fact_table|safe}}
       </div>
         
@@ -48,24 +49,24 @@
     </div>
     <hr>
     <div class="row">
-      <div class="col-md-8">
-        <h2>Mars Hemispheres </h2>
+      <div class="col-md-6">
+        <h2> <b> Mars Hemispheres </b> </h2>
       </div>
     </div>
-    <br>
+  <br>
    
     <div class="row">
       {% for img_urls in mars_list.Hemispher_links %}
-      <div class="col-md-6">
+      <div class="col-md-3">
         <div>
-        <h2> Place holder to plug in src url</h2>
-        <img src="{{img_urls.img_url}}" >
+        
+        <img  width="200 px" height="200 px" src="{{img_urls.img_url}}" >
   <!-- Phone Listings -->
            
         </div>
         <div>
   <!-- Phone Listings -->
-          <h2> {{img_urls.title}}</h2>
+          <h5> {{img_urls.title}}</h5>
           
           </div>
       </div>
